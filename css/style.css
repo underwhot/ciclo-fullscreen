@@ -491,8 +491,6 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  position: relative;
-  z-index: 1;
 }
 
 .screen-01__section-header {
@@ -923,6 +921,11 @@ h6 {
             align-items: center;
     padding-top: 3.125rem;
     padding-bottom: 3.125rem;
+  }
+
+  .screen-01__body {
+    position: relative;
+    z-index: 1;
   }
 
   .screen-02__content {
@@ -1421,7 +1424,7 @@ h6 {
 
   .page__section::after {
     top: 1.875rem;
-    right: 50%;
+    right: 50% !important;
   }
 
   .screen-01__container {

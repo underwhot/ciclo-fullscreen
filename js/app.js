@@ -21,6 +21,9 @@
             return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
         }
     };
+    function addTouchClass() {
+        if (isMobile.any()) document.documentElement.classList.add("touch");
+    }
     function addLoadedClass() {
         window.addEventListener("load", (function() {
             setTimeout((function() {
@@ -539,6 +542,7 @@
         }
     }), 0);
     window["FLS"] = false;
+    addTouchClass();
     addLoadedClass();
     fullVHfix();
     digitsCounter();
